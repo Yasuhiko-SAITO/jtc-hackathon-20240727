@@ -1,13 +1,12 @@
 import { test, expect, devices } from '@playwright/test';
 
 test('アカウント作成とログイン後、TODOを追加し、別デバイスで確認', async ({ page, browser }) => {
-    console.log('Running test: アカウント作成とログイン後、TODOを追加し、別デバイスで確認');
     // ランダムなメールアドレスを生成
     const randomEmail = `testuser_${Math.random().toString(36).substring(2, 10)}_${Date.now()}@example.com`;
     const password = 'Test@1234';
 
     // 登録したメールアドレスをログに出力
-    console.log(`Generated email: ${randomEmail}`);
+    // console.log(`Generated email: ${randomEmail}`);
 
     // 登録ページに移動
     await page.goto('https://todo-app-qajp.vercel.app/register');
