@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  playwright:
+    container_name: playwright-container
+    # build:
+    #   context: .
+    #   dockerfile: dev.dockerfile
+    image: mcr.microsoft.com/playwright:focal
+    tty: true
+    volumes:
+      - ../:/usr/src/playwright
+    environment:
+      - DISPLAY=${DISPLAY}
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+    # ipc: host
+    # network_mode: "host"

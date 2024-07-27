@@ -1,0 +1,12 @@
+{
+  "name": "Playwright Dev Container",
+  "dockerFile": "dev.dockerfile",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-playwright.playwright"
+  ],
+  "postCreateCommand": "yarn install && npx playwright install",
+  "remoteUser": "node"
+}
