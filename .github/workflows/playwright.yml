@@ -32,7 +32,7 @@ jobs:
       - name: Run Playwright tests
         run: |
           cd playwright
-          npx playwright test --reporter=dot
+          npx playwright test --reporter=dot --reporter=list
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v2

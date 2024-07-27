@@ -1,6 +1,7 @@
 import { test, expect, devices } from '@playwright/test';
 
 test('アカウント作成とログイン後、TODOを追加し、別デバイスで確認', async ({ page, browser }) => {
+    console.log('Running test: アカウント作成とログイン後、TODOを追加し、別デバイスで確認');
     // ランダムなメールアドレスを生成
     const randomEmail = `testuser_${Math.random().toString(36).substring(2, 10)}_${Date.now()}@example.com`;
     const password = 'Test@1234';
