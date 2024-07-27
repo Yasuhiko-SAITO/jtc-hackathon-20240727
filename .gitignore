@@ -129,5 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# テンプレートファイルから生成したファイル
-default_user.yml
+# テンプレートファイルから生成したファイル CIが回らないのでコメントアウト
+# default_user.yml
