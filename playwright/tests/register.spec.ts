@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('アカウント作成とログインのテスト', async ({ page }) => {
+test('アカウント作成とログインして、TODO作成するテスト', async ({ page }) => {
     // ランダムなメールアドレスを生成
     const randomEmail = `testuser_${Math.random().toString(36).substring(2, 10)}_${Date.now()}@example.com`;
     const password = 'Test@1234';
