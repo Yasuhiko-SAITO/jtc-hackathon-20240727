@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Setup js-yaml
+        run: npm install js-yaml
+
       - name: Install dependencies
         run: |
           cd playwright
@@ -28,6 +31,7 @@ jobs:
 
       - name: Run Playwright tests
         run: |
+          set -e
           cd playwright
           npx playwright test --reporter=dot
 

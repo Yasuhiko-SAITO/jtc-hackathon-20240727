@@ -6,7 +6,7 @@ test('アカウント作成とログイン後、TODOを追加し、別デバイ�
     const password = 'Test@1234';
 
     // 登録したメールアドレスをログに出力
-    console.log(`Generated email: ${randomEmail}`);
+    // console.log(`Generated email: ${randomEmail}`);
 
     // 登録ページに移動
     await page.goto('https://todo-app-qajp.vercel.app/register');
