@@ -19,3 +19,6 @@ npm install
 npx playwright test
 
 ```
+
+## Presentation
+[link](https://docs.google.com/presentation/d/1YtJ6KZBtMI3awwxMiNZ3msILX99fcFGADy6V-Dz6JYw/edit?usp=sharing)
